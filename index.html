@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102d50">
+  <meta name="description" content="Upoznajte Isolaniju: osnovne podatke, teritorij, upravu, pravila i državne simbole. Osobni projekt izmišljene države.">
+  <title>Isolanija | Službeni portal</title>
+  <style>
+    :root{--paper:#f8f7f2;--white:#fffefa;--ink:#142d47;--muted:#586775;--line:#dcded8;--gold:#c49a31;--navy:#0c315e;--wash:#edf0ec;--county1:#b6cbd1;--county2:#d9c794;--county3:#a9bba5}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65}button,input{font:inherit}button,a,input{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{color:inherit}button,a,input{touch-action:manipulation}button{cursor:pointer}img{display:block;max-width:100%;height:auto}::selection{background:#e9d597}h1,h2,h3,p{margin:0}h1,h2,.serif{font-family:Georgia,'Times New Roman',serif;font-weight:400}h2{font-size:clamp(36px,4.5vw,56px);line-height:1.15;letter-spacing:-1.6px}h3{font-size:17px;line-height:1.4}p{color:var(--muted)}:focus-visible{outline:3px solid #9c711c;outline-offset:5px}section[id]{scroll-margin-top:20px}.wrap{max-width:1280px;margin:auto;padding:0 40px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;display:flex;align-items:center;gap:12px}.eyebrow:before{content:'';width:25px;height:2px;background:var(--gold)}.section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:38px}.section-heading .eyebrow{margin-bottom:17px}.section-heading>p{max-width:365px;font-size:14px}.skip{position:fixed;top:10px;left:10px;padding:10px 18px;background:white;z-index:100;transform:translateY(-150%)}.skip:focus{transform:none}
+    header{position:sticky;top:0;z-index:30;background:rgba(248,247,242,.98);border-bottom:1px solid var(--line)}.header-inner{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:13px}.brand img{width:48px;height:auto}.brand-name{font-family:Georgia,serif;font-size:25px;line-height:1.1;letter-spacing:-.5px}.brand small{display:block;font-family:Arial,sans-serif;font-size:9px;letter-spacing:1.9px;text-transform:uppercase;margin-top:5px;color:var(--muted)}nav{display:flex;gap:29px;align-items:center}nav a{font-size:13px;padding:10px 0;border-bottom:1px solid transparent}nav a:hover{border-color:var(--gold)}.menu-toggle{display:none;background:transparent;border:1px solid var(--line);padding:8px 13px;font-size:13px}.menu-icon{margin-left:8px}.hero{padding:69px 0 0;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:75px;align-items:center}.hero .eyebrow{margin-bottom:23px}.hero h1{font-size:clamp(65px,7.8vw,108px);line-height:1.08;letter-spacing:-5px;margin-left:-4px}.hero-motto{font-family:Georgia,serif;font-size:28px;margin-top:20px;color:var(--ink)}.translation{font-size:13px;letter-spacing:.4px;margin-top:4px}.intro{font-size:15px;max-width:420px;margin-top:27px}.primary-link{display:inline-flex;align-items:center;gap:36px;background:var(--navy);color:white;padding:13px 20px;font-size:13px;margin-top:28px;transition:background .2s}.primary-link:hover{background:#214b73}.arrow{font-size:20px;line-height:1}.hero-art{position:relative;padding:42px 0 38px 10px}.hero-art:before{content:'';position:absolute;inset:0 0 0 12%;background:repeating-linear-gradient(0deg,transparent 0,transparent 47px,#dce0da 48px),repeating-linear-gradient(90deg,transparent 0,transparent 47px,#dce0da 48px);opacity:.55;mask-image:linear-gradient(90deg,transparent,#000)}.hero-flag{position:relative;width:100%;border:7px solid var(--white);box-shadow:0 12px 28px #132c4610;transform:rotate(-3deg)}.outline-stamp{position:absolute;right:-18px;bottom:0;width:145px;height:160px;background:var(--paper);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex-direction:column;transform:rotate(4deg)}.outline-stamp svg{width:82px;height:auto;aspect-ratio:1392/872;fill:#e5e8df;stroke:var(--gold);stroke-width:3}.outline-stamp span{font-size:8px;letter-spacing:1.5px;text-transform:uppercase}.hero-bottom{display:flex;justify-content:space-between;gap:20px;margin-top:62px;border-top:1px solid var(--line);padding:18px 0;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted)}.hero-bottom span:last-child{color:var(--ink)}
+    .about{padding:80px 0 85px;border-top:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:.85fr 1.4fr;gap:90px}.about h2{margin-top:20px}.about-intro{font-size:14px;max-width:290px;margin-top:22px}.facts{margin:0}.fact{display:grid;grid-template-columns:1fr 1.1fr;gap:20px;padding:15px 0;border-bottom:1px solid var(--line)}.fact:first-child{border-top:1px solid var(--line)}dt{font-size:13px;color:var(--muted)}dd{margin:0;font-size:15px}.fact dd{font-weight:500}.fact .count{font-family:Georgia,serif;font-size:24px;line-height:1;margin-right:8px}.territory{padding:75px 0 80px;background:var(--wash);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.map-layout{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(285px,1fr);border:1px solid #d0d6cc;background:var(--paper)}.map-stage{min-width:0;position:relative;display:flex;flex-direction:column;background-color:#e9ede7;background-image:linear-gradient(#d8ded54a 1px,transparent 1px),linear-gradient(90deg,#d8ded54a 1px,transparent 1px);background-size:42px 42px}.map-topline{display:flex;justify-content:space-between;padding:21px 25px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#526557}.map-topline span:first-child{padding:3px 7px;background:#f8f7f2bd;border:1px solid #cbd1c5}.map-compass{position:absolute;right:28px;top:73px;display:grid;text-align:center;font-size:11px;color:#63715f;line-height:1.6}.map-compass span{font-size:25px}.main-map{display:block;width:100%;height:auto;aspect-ratio:1392/872;max-height:550px;overflow:visible}.city{cursor:pointer;outline:none}.city .marker-halo{fill:transparent;stroke:transparent;stroke-width:2}.city .marker-core{fill:var(--navy);stroke:var(--paper);stroke-width:2}.city text{font-size:15px;fill:var(--ink);font-weight:600;paint-order:stroke;stroke:#f8f7f2;stroke-width:4;stroke-linejoin:round}.city .capital-label{font-size:10px;font-weight:400;letter-spacing:.5px;fill:#4f6256}.city:hover .marker-halo,.city:focus-visible .marker-halo{fill:#ffffff85;stroke:var(--navy)}.city.is-selected .marker-halo{fill:#f3ce66;stroke:var(--navy)}.city.is-selected text{fill:#6a490a}.map-note{padding:14px 25px 20px;margin-top:auto;font-size:11px;color:#526557;line-height:1.6}.map-panel{border-left:1px solid #d0d6cc;padding:26px 25px;min-width:0}.selection{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:22px;min-height:106px}.selection-label{font-size:9px;text-transform:uppercase;letter-spacing:1.8px;color:var(--muted)}.selection h3{font-family:Georgia,serif;font-size:24px;font-weight:400;line-height:1.2;margin:8px 0}.selection p{font-size:11px;line-height:1.5}.list-title{font-size:10px;text-transform:uppercase;letter-spacing:1.8px;margin:20px 0 10px}.map-list{list-style:none;padding:0;margin:0}.map-list button{width:100%;display:flex;align-items:center;gap:11px;padding:9px 10px;border:1px solid transparent;background:transparent;text-align:left;font-size:12px;line-height:1.4;min-height:40px;transition:background .18s}.map-list button:hover{background:#e8ebe3}.map-list button[aria-pressed=true]{background:#ede5cd;border-color:#d2b96f}.swatch{width:10px;height:10px;flex-shrink:0;border:1px solid #142d4720}.list-dot{width:6px;height:6px;background:var(--navy);border-radius:50%;margin:0 2px;flex-shrink:0}.list-dot.capital{width:10px;height:10px;margin:0;outline:1px solid var(--navy);outline-offset:2px;border:2px solid var(--paper)}.city-caption{font-size:9px;color:var(--muted);margin-left:auto;white-space:nowrap}.map-key{display:flex;gap:25px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:17px}.map-key span{display:flex;align-items:center;gap:8px}.map-key i{display:inline-block}
+    .government{padding:80px 0}.officials{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.official{padding:32px 0;display:flex;align-items:center;gap:24px}.official+.official{padding-left:40px;border-left:1px solid var(--line)}.official-index{font-family:Georgia,serif;font-size:42px;color:#bec5c7}.official p{font-size:11px;letter-spacing:1.3px;text-transform:uppercase;margin-bottom:8px}.official h3{font-family:Georgia,serif;font-size:29px;font-weight:400}.rules{background:var(--navy);color:#fffef9;padding:75px 0 80px}.rules p{color:#c3ceda}.rules .eyebrow{color:#d5dfeb}.rules .section-heading{margin-bottom:35px}.rules-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:65px}.residency{border-left:2px solid #d5ae4e;padding:2px 0 2px 20px;margin-bottom:28px}.residency h3{font-size:13px;margin-bottom:7px}.residency p{font-family:Georgia,serif;font-size:22px;color:#fffef9;line-height:1.5;max-width:490px}table{width:100%;border-collapse:collapse;font-size:13px;text-align:left}caption{text-align:left;font-size:10px;letter-spacing:1.7px;text-transform:uppercase;color:#c3ceda;padding-bottom:12px}th{font-size:10px;text-transform:uppercase;letter-spacing:1.3px;color:#b8c8d9;font-weight:400}th,td{padding:15px 0;border-bottom:1px solid #ffffff24}td:first-child{padding-right:30px}th:last-child,td:last-child{text-align:right;white-space:nowrap}td:last-child{font-family:Georgia,serif;font-size:22px;color:#edcf82}.stay-check{align-self:start;background:#ffffff08;border:1px solid #ffffff2b;padding:27px}.stay-check h3{font-family:Georgia,serif;font-size:26px;font-weight:400;margin-bottom:7px}.stay-check>p{font-size:12px}.day-input-row{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:25px}.day-input-row label{font-size:12px;color:#d8e1e9}.number-wrap{display:flex;align-items:center;gap:8px}.number-wrap input{width:75px;background:transparent;border:1px solid #ffffff50;color:white;padding:6px 7px;text-align:center;font-family:Georgia,serif;font-size:25px;border-radius:0}.number-wrap span{font-size:12px;color:#c3ceda}input[type=range]{accent-color:#edc35e;width:100%;margin:23px 0 0;cursor:pointer}.range-labels{display:flex;justify-content:space-between;color:#b8c8d9;font-size:10px}.stay-result{margin-top:23px;border-top:1px solid #ffffff24;padding-top:20px;min-height:115px}.stay-result strong{display:block;font-size:15px;font-weight:500;color:#f3d994}.stay-result p{font-size:12px;margin-top:7px}.symbols{padding:85px 0}.symbols-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.flag-figure{margin:0}.flag-frame{padding:14px;background:var(--white);border:1px solid var(--line)}.flag-figure img{width:100%;height:auto}.flag-figure figcaption{display:flex;justify-content:space-between;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);padding-top:15px}.identity{margin:0}.identity .fact{grid-template-columns:1fr 1.2fr;padding:17px 0}.identity dd{font-size:15px}.identity dd small{display:block;font-size:11px;color:var(--muted);font-weight:400;margin-top:3px}.identity .motto{font-family:Georgia,serif;font-size:22px}.footer{background:#eceee7;border-top:1px solid var(--line);padding:35px 0 25px}.footer-top{display:flex;justify-content:space-between;align-items:center;gap:25px;padding-bottom:28px}.footer-brand{font-family:Georgia,serif;font-size:27px}.footer nav{gap:23px}.footer-bottom{border-top:1px solid #d2d7cd;padding-top:18px;display:flex;justify-content:space-between;gap:20px;font-size:11px;color:var(--muted)}.footer-bottom a:hover{text-decoration:underline}
+    @media(min-width:1500px){.hero{padding-top:85px}.hero-bottom{margin-top:80px}}@media(max-width:1000px){.wrap{padding:0 28px}.hero-grid{gap:40px}.hero h1{font-size:85px}.hero-motto{font-size:24px}.outline-stamp{right:-8px;width:120px;height:140px}.about-grid{gap:45px}.map-layout{grid-template-columns:minmax(0,1.45fr) minmax(270px,1fr)}.map-panel{padding:22px 18px}.rules-grid{gap:30px;grid-template-columns:1.3fr 1fr}.symbols-grid{gap:35px}.official h3{font-size:25px}.official+.official{padding-left:28px}.footer nav{gap:15px}}
+    @media(max-width:760px){html{scroll-padding-top:92px}.wrap{padding:0 22px}.header-inner{min-height:73px}.brand img{width:40px}.brand-name{font-size:23px}.brand small{font-size:8px}.menu-toggle{display:block}.main-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 22px 20px;box-shadow:0 9px 15px #142d4708;flex-direction:column;gap:0;align-items:stretch}.main-nav.is-open{display:flex}.main-nav a{padding:12px 0;border-bottom:1px solid var(--line)}.hero{padding-top:42px}.hero-grid{grid-template-columns:1fr;gap:28px}.hero h1{font-size:78px;letter-spacing:-4px}.hero .eyebrow{margin-bottom:16px}.hero-motto{margin-top:15px;font-size:26px}.intro{margin-top:20px;max-width:460px}.hero-art{padding:25px 14px 26px 0;max-width:430px;width:90%;justify-self:center}.outline-stamp{height:120px;width:105px;right:-15px;bottom:0}.outline-stamp svg{height:auto;aspect-ratio:1392/872;width:65px}.hero-bottom{margin-top:35px;font-size:8px;letter-spacing:1px}.about,.government,.symbols{padding:57px 0}.about-grid{grid-template-columns:1fr;gap:30px}.about-intro{max-width:450px;margin-top:18px}.fact{padding:13px 0}.territory,.rules{padding:55px 0}.section-heading{display:block;margin-bottom:28px}.section-heading>p{margin-top:18px;max-width:430px}.section-heading .eyebrow{margin-bottom:13px}.map-layout{grid-template-columns:1fr}.map-panel{border-left:0;border-top:1px solid #d0d6cc;padding:24px}.map-topline{padding:18px}.map-note{padding:10px 18px 18px}.main-map{max-height:500px}.selection{min-height:90px}.map-lists{display:grid;grid-template-columns:1fr 1fr;gap:20px}.list-title{margin-top:0}.map-list button{padding:9px 5px;font-size:11px}.city-caption{display:none}.map-key{gap:17px;font-size:10px}.officials{grid-template-columns:1fr}.official{padding:24px 0}.official+.official{border-left:0;border-top:1px solid var(--line);padding-left:0}.official h3{font-size:28px}.official-index{font-size:35px}.rules-grid{grid-template-columns:1fr;gap:32px}.stay-check{padding:25px}.stay-result{min-height:85px}.symbols-grid{grid-template-columns:1fr;gap:35px}.flag-figure{max-width:550px}.identity .fact{grid-template-columns:1fr 1.2fr}.footer-top{align-items:flex-start;flex-direction:column;gap:17px}.footer nav{flex-wrap:wrap;gap:6px 21px}.footer nav a{font-size:12px}.footer-bottom{font-size:10px;align-items:flex-start}.residency p{font-size:21px}.map-compass{top:60px;right:20px}}
+    @media(min-width:761px) and (max-width:900px){.map-layout{grid-template-columns:1fr}.map-panel{border-left:0;border-top:1px solid #d0d6cc;padding:26px}.map-lists{display:grid;grid-template-columns:1fr 1fr;gap:30px}.map-list button{font-size:13px}.list-title{margin-top:0}}
+    .outline-stamp{position:relative;right:auto;bottom:auto;margin:22px 0 -38px auto;width:165px;height:60px;flex-direction:row;gap:12px;border:0;background:transparent;transform:none}.outline-stamp svg{width:48px;height:auto;aspect-ratio:1392/872}.outline-stamp span{max-width:85px;line-height:1.7}
+    @media(max-width:760px){.main-map{aspect-ratio:1392/872;max-height:none}.outline-stamp{width:150px;height:55px;margin:18px 0 -26px auto}.outline-stamp svg{width:42px;height:auto;aspect-ratio:1392/872}}
+    /* Motion is progressive enhancement; content is never hidden awaiting JS. */
+    :root{--ease-out:cubic-bezier(.23,1,.32,1)}
+    header{transition:background 220ms ease,box-shadow 220ms ease}
+    header.is-scrolled{background:rgba(248,247,242,.92);backdrop-filter:blur(10px);box-shadow:0 3px 14px #142d4709}
+    nav a{position:relative;border-bottom-color:transparent!important}
+    nav a:after{content:'';position:absolute;left:0;right:0;bottom:5px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 200ms var(--ease-out)}
+    nav a:hover:after,nav a:focus-visible:after,nav a[aria-current="location"]:after{transform:scaleX(1)}
+    nav a[aria-current="location"]{color:#805d13}
+    .primary-link{transition:background 180ms ease,transform 160ms var(--ease-out),box-shadow 180ms ease}
+    .primary-link .arrow{transition:transform 180ms var(--ease-out)}
+    .primary-link:active{transform:scale(.98)}
+    .hero-flag{transition:transform 320ms var(--ease-out)}
+    .outline-stamp{width:190px;gap:14px}.outline-stamp svg{width:88px;height:auto;aspect-ratio:1392/872;flex-shrink:0}
+    .outline-stamp span{max-width:85px}
+    .main-map{aspect-ratio:1392/872;max-height:none;overflow:hidden;margin:auto 0}
+    .map-stage{justify-content:flex-start}.map-note{margin-top:auto}
+    .map-compass{top:65px;right:22px}
+    
+    
+    
+    
+    .city .marker-halo{transition:fill 160ms ease,stroke 160ms ease;transform-box:fill-box;transform-origin:center}
+    .city.is-selected .marker-halo{fill:#f4d68144;stroke:#a07820;stroke-width:1.6}
+    .city text{font-size:40px;stroke-width:7.2}.city .capital-label{font-size:26px}
+    .city .hit-area{fill:transparent;stroke:none}.selection{min-height:145px}
+    .stay-result{min-height:190px}
+    @media(hover:hover) and (pointer:fine){
+      
+      .primary-link:hover{transform:translateY(-2px);box-shadow:0 4px 10px #142d4715}
+      .primary-link:hover .arrow{transform:translate(2px,-2px)}
+    }
+    @media(max-width:760px){
+      .main-map{aspect-ratio:1392/872;max-height:none}
+      .city text{font-size:57px;stroke-width:9.4}.city .capital-label{font-size:40px}
+      .map-compass{top:55px;font-size:9px;right:15px}.map-compass span{font-size:19px}
+      .map-topline{font-size:8px;letter-spacing:1px;padding:16px 13px}
+      .map-note{padding:14px 16px 18px;font-size:11px}
+      .outline-stamp svg{width:80px;height:auto;aspect-ratio:1392/872}.outline-stamp{width:180px}
+      .selection{min-height:145px}.stay-result{min-height:170px}
+    }
+    @media(prefers-reduced-motion:no-preference){
+      .hero-copy>*{animation:arrive 520ms var(--ease-out) both}
+      .hero-copy>:nth-child(2){animation-delay:55ms}.hero-copy>:nth-child(3){animation-delay:110ms}
+      .hero-copy>:nth-child(4){animation-delay:150ms}.hero-copy>:nth-child(5){animation-delay:190ms}
+      .hero-copy>:nth-child(6){animation-delay:240ms}.hero-art{animation:arrive 650ms 130ms var(--ease-out) both}
+      .reveal-once{animation:arrive 580ms var(--ease-out) both}
+
+
+      .map-enter{animation:map-appear 400ms ease-out both}
+      .map-enter .city{animation:map-city 360ms 250ms var(--ease-out) both}
+      .map-enter .city:nth-child(2){animation-delay:300ms}.map-enter .city:nth-child(3){animation-delay:350ms}
+      .map-enter .city:nth-child(4){animation-delay:400ms}.map-enter .city:nth-child(5){animation-delay:450ms}
+      .map-enter:focus-within .city,.map-enter.is-interacting .city{animation:none}
+      @keyframes arrive{from{opacity:0;translate:0 16px}to{opacity:1;translate:0 0}}
+      @keyframes map-appear{from{opacity:0}to{opacity:1}}
+      @keyframes map-city{from{opacity:0;translate:0 6px}to{opacity:1;translate:0 0}}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}
+      .hero-flag{transform:rotate(-3deg)!important}.primary-link:active,.primary-link:hover{transform:none}
+
+    }
+    .county-block{margin-top:58px;padding-top:48px;border-top:1px solid #d0d6cc}
+    .county-figure{margin:0;max-width:900px}
+    .county-map{display:block;width:100%;height:auto;aspect-ratio:700/480;border:1px solid #d0d6cc;background:var(--paper);overflow:hidden}
+    .county-labels{font-size:20px;font-weight:600;fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:4px;stroke-linejoin:round}
+    .county-capital-label{font-size:23px}.county-subtitle{font-size:18px;font-weight:400}
+    .county-figure figcaption{font-size:11px;color:var(--muted);padding-top:13px}
+    @media(max-width:760px){.county-block{margin-top:38px;padding-top:35px}.county-labels{font-size:27px;stroke-width:5px}.county-capital-label{font-size:26px}.county-subtitle{font-size:23px}}
+  </style>
+</head>
+<body id="vrh">
+  <a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="#vrh" aria-label="Isolanija — početak"><img src="img1.jpg" alt="Zastava Isolanije" width="1600" height="1067"><span class="brand-name">Isolanija<small>Službeni portal</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="glavna-navigacija">Izbornik <span class="menu-icon" aria-hidden="true">☰</span></button>
+      <nav class="main-nav" id="glavna-navigacija" aria-label="Glavna navigacija"><a href="#o-drzavi">O državi</a><a href="#teritorij">Teritorij</a><a href="#uprava">Uprava</a><a href="#pravila">Pravila</a><a href="#simboli">Simboli</a></nav>
+    </div>
+  </header>
+  <main id="sadrzaj">
+    <section class="hero" aria-labelledby="naslov">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-copy"><div class="eyebrow">Službeni portal</div><h1 id="naslov">Isolanija</h1><p class="hero-motto">Liber, Fort, Unita</p><p class="translation">Slobodna, snažna, ujedinjena</p><p class="intro">Upoznajte Isolaniju, njezinih pet gradova i tri županije. Pregled teritorija, uprave i pravila na jednom mjestu.</p><a class="primary-link" href="#teritorij">Istraži kartu <span class="arrow" aria-hidden="true">↗</span></a></div>
+          <div class="hero-art"><img class="hero-flag" src="img1.jpg" width="1600" height="1067" alt="Zastava Isolanije s tamnoplavim i bijelim poljima, zlatnim linijama i središnjim grbom"><div class="outline-stamp" aria-hidden="true"><svg viewBox="0 260 1392 872" preserveAspectRatio="xMidYMid meet"><image href="img3.jpg" x="0" y="0" width="1392" height="1392" preserveAspectRatio="xMidYMid meet"/></svg><span>Zemljovid</span></div></div>
+        </div>
+        <div class="hero-bottom"><span>Hrvatski i isolanski</span><span>Glavni grad · Isolgrad</span></div>
+      </div>
+    </section>
+    <section class="about" id="o-drzavi" aria-labelledby="about-title"><div class="wrap about-grid"><div><div class="eyebrow">01 / O državi</div><h2 id="about-title">Isolanija<br>na jednom mjestu.</h2><p class="about-intro">Osnovni podaci o državi, njezinu glavnom gradu i teritorijalnoj podjeli.</p></div><dl class="facts"><div class="fact"><dt>Glavni grad</dt><dd>Isolgrad</dd></div><div class="fact"><dt>Valuta</dt><dd>euro <span style="color:var(--muted)">— EUR</span></dd></div><div class="fact"><dt>Službeni jezici</dt><dd>hrvatski i isolanski</dd></div><div class="fact"><dt>Teritorijalna podjela</dt><dd><span class="count">3</span> županije</dd></div><div class="fact"><dt>Gradovi</dt><dd><span class="count">5</span> gradova</dd></div></dl></div></section>
+    <section class="territory" id="teritorij" aria-labelledby="territory-title"><div class="wrap"><div class="section-heading"><div><div class="eyebrow">02 / Teritorij</div><h2 id="territory-title">Tri županije. Pet gradova.</h2></div><p>Odaberite grad na karti ili stavku u popisu za pregled naziva.</p></div>
+      <div class="map-layout"><div class="map-stage"><div class="map-topline"><span>Karta gradova</span><span>Isolanija / Teritorij</span></div><svg class="main-map" id="country-map" viewBox="0 260 1392 872" preserveAspectRatio="xMidYMid meet" role="group" aria-labelledby="map-title map-description"><title id="map-title">Karta gradova Isolanije na izvornoj slici</title><desc id="map-description">Izvorni zemljovid s crnom vanjskom granicom, sivim unutarnjim linijama, cestama i zgradama. Položaji gradova su ilustrativni. Značenje sivih linija nije zadano.</desc><image href="img3.jpg" x="0" y="0" width="1392" height="1392" preserveAspectRatio="xMidYMid meet"/><g id="city-layer" role="group" aria-label="Interaktivni markeri gradova"></g></svg><p class="map-note">Izvorna dostavljena slika. Položaji gradova su ilustrativni. Značenje sivih unutarnjih linija nije zadano.</p></div>
+      <aside class="map-panel" aria-label="Odabir na karti"><div class="selection" aria-live="polite" aria-atomic="true"><span class="selection-label" id="selection-kind">Pregled teritorija</span><h3 id="selection-name">Upoznajte Isolaniju</h3><p id="selection-detail">3 županije i 5 gradova. Odaberite stavku za prikaz naziva.</p></div><div class="map-lists"><div><h3 class="list-title">Županije</h3><ul class="map-list" id="county-list"></ul></div><div><h3 class="list-title">Gradovi</h3><ul class="map-list" id="city-list"></ul></div></div></aside></div>
+      <div class="map-key" aria-label="Legenda oznaka"><span><i class="list-dot capital"></i> Glavni grad</span><span><i class="list-dot"></i> Grad</span><span>Položaji gradova su ilustrativni.</span></div>
+      <noscript><p>Županije: Isolgrad, Tržna županija, Industrijsko-sportska županija. Gradovi: Isolgrad — glavni grad, Tržin, Sportin, Feron, Novaris. Za interaktivnu kartu uključite JavaScript.</p></noscript>
+
+      <section class="county-block" aria-labelledby="county-title">
+        <div class="section-heading"><div><div class="eyebrow">Teritorijalna podjela</div><h2 id="county-title">Županije Isolanije</h2></div><p>Podjela prema zelenim granicama na dostavljenoj slici.</p></div>
+        <figure class="county-figure">
+          <svg id="county-map" class="county-map" viewBox="400 250 700 480" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="county-map-title county-map-desc">
+            <title id="county-map-title">Županije Isolanije prema zelenim granicama</title>
+            <desc id="county-map-desc">Tržna županija zauzima gornje područje. Industrijsko-sportska županija zauzima donje područje izvan zatvorenog Isolgrada. Malo zatvoreno središnje područje je Isolgrad — grad i županija.</desc>
+            <image href="img2.jpg" x="0" y="0" width="1600" height="1000" preserveAspectRatio="xMidYMid meet"/>
+            <g class="county-labels" text-anchor="middle" aria-hidden="true">
+              <text x="745" y="380">Tržna županija</text>
+              <text class="county-capital-label" x="675" y="475"><tspan x="675">Isolgrad —</tspan><tspan class="county-subtitle" x="675" dy="30">grad i županija</tspan></text>
+              <text x="810" y="590"><tspan x="810">Industrijsko-sportska</tspan><tspan x="810" dy="34">županija</tspan></text>
+            </g>
+          </svg>
+          <figcaption>Izvorna slika sa zelenim razdjelnim linijama. Isolgrad je istodobno grad i županija.</figcaption>
+        </figure>
+      </section>
+    </div></section>
+    <section class="government" id="uprava" aria-labelledby="government-title"><div class="wrap"><div class="section-heading"><div><div class="eyebrow">03 / Uprava</div><h2 id="government-title">Državno vodstvo</h2></div></div><div class="officials"><article class="official"><span class="official-index" aria-hidden="true">01</span><div><p>Predsjednik</p><h3>Maro Maračić</h3></div></article><article class="official"><span class="official-index" aria-hidden="true">02</span><div><p>Predsjednik vlade</p><h3>Siniša Maračić</h3></div></article></div></div></section>
+    <section class="rules" id="pravila" aria-labelledby="rules-title"><div class="wrap"><div class="section-heading"><div><div class="eyebrow">04 / Pravila</div><h2 id="rules-title">Boravak i pravila</h2></div><p>Uvjet za stanovništvo i pregled prekršaja s pripadajućim kaznama.</p></div><div class="rules-grid"><div><div class="residency"><h3>Uvjet boravka</h3><p>Da bi postao stanovnik, moraš provesti najmanje pet dana u državi.</p></div><table><caption>Prekršaji i kazne</caption><thead><tr><th scope="col">Prekršaj</th><th scope="col">Kazna</th></tr></thead><tbody><tr><td>Ako si u državi najmanje pet dana i izjaviš da nisi stanovnik</td><td>500 €</td></tr><tr><td>Lovljenje gradskih golubova</td><td>1.000 €</td></tr><tr><td>Ruganje predsjedniku</td><td>2.000 €</td></tr></tbody></table></div><div class="stay-check"><h3>Provjera boravka</h3><p>Odaberite broj dana provedenih u državi.</p><div class="day-input-row"><label for="days-number">Broj dana</label><div class="number-wrap"><input id="days-number" type="number" min="0" max="36500" step="1" value="0" inputmode="numeric" aria-describedby="stay-status"><span>dana</span></div></div><input id="days-range" type="range" min="0" max="30" step="1" value="0" aria-label="Broj dana boravka — klizač" aria-describedby="stay-status"><div class="range-labels" aria-hidden="true"><span>0 dana</span><span id="range-max">30 dana</span></div><div class="stay-result" id="stay-status" role="status" aria-live="polite" aria-atomic="true"><strong id="stay-headline">Do ispunjenja uvjeta preostaje 5 dana.</strong><p id="stay-detail">Uvjet boravka je najmanje pet dana u državi.</p></div><noscript><p>Za interaktivnu provjeru uključite JavaScript.</p></noscript></div></div></div></section>
+    <section class="symbols" id="simboli" aria-labelledby="symbols-title"><div class="wrap"><div class="section-heading"><div><div class="eyebrow">05 / Simboli i identitet</div><h2 id="symbols-title">Obilježja Isolanije</h2></div></div><div class="symbols-grid"><figure class="flag-figure"><div class="flag-frame"><img src="img1.jpg" alt="Cijela zastava Isolanije u izvornim proporcijama" width="1600" height="1067" loading="lazy"></div><figcaption><span>Zastava Isolanije</span><span>Državni simbol</span></figcaption></figure><dl class="identity"><div class="fact"><dt>Moto</dt><dd class="motto">Liber, Fort, Unita<small>Slobodna, snažna, ujedinjena</small></dd></div><div class="fact"><dt>Službeni moto</dt><dd class="motto">Mi vol Isolania</dd></div><div class="fact"><dt>Himna</dt><dd>Zemlja slobode</dd></div><div class="fact"><dt>Službena životinja</dt><dd>gradski golub</dd></div><div class="fact"><dt>Službeni sport</dt><dd>bottlegun</dd></div></dl></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#vrh">Isolanija<span style="color:var(--gold)">.</span></a><nav aria-label="Navigacija u podnožju"><a href="#o-drzavi">O državi</a><a href="#teritorij">Teritorij</a><a href="#uprava">Uprava</a><a href="#pravila">Pravila</a><a href="#simboli">Simboli</a></nav></div><div class="footer-bottom"><span>Osobni projekt izmišljene države.</span><a href="#vrh">Povratak na vrh ↑</a></div></div></footer>
+  <script>
+    'use strict';
+    /* MAP CONFIGURATION: native pixels of img3.jpg (1392 x 1392).
+       Only the blank top/bottom margins are hidden by the shared viewBox.
+       The original raster remains unchanged; no traced borders or county areas.
+       Grey lines are part of the supplied image, with no assigned meaning.
+       City positions are illustrative and have no county membership. */
+    // Snapshot of positions BEFORE this change; all moves use this same snapshot.
+    const PREVIOUS_CITY_POSITIONS = Object.freeze({
+      isolgrad:Object.freeze({x:680,y:550}),
+      trzin:Object.freeze({x:620,y:770}),
+      sportin:Object.freeze({x:1070,y:690}),
+      feron:Object.freeze({x:760,y:870}),
+      novaris:Object.freeze({x:1140,y:980})
+    });
+    const MAP_CONFIG = {
+      image:'img3.jpg',
+      viewBox:'0 260 1392 872',
+      counties:[
+        {id:'county-isolgrad',name:'Isolgrad',description:'Malo zatvoreno područje omeđeno zelenom linijom. Isolgrad je grad i županija.'},
+        {id:'county-trzna',name:'Tržna županija',description:'Veliko gornje područje iznad zelene razdjelne linije na karti županija.'},
+        {id:'county-industrijska',name:'Industrijsko-sportska županija',description:'Veliko donje područje, izvan malog zatvorenog područja Isolgrada.'}
+      ],
+      cities:[
+        {id:'city-isolgrad',name:'Isolgrad',...PREVIOUS_CITY_POSITIONS.trzin,capital:true},
+        {id:'city-trzin',name:'Tržin',...PREVIOUS_CITY_POSITIONS.isolgrad},
+        {id:'city-sportin',name:'Sportin',...PREVIOUS_CITY_POSITIONS.feron,labelY:45},
+        {id:'city-feron',name:'Feron',...PREVIOUS_CITY_POSITIONS.novaris,labelX:-38,anchor:'end'},
+        {id:'city-novaris',name:'Novaris',...PREVIOUS_CITY_POSITIONS.sportin,labelX:-38,anchor:'end'}
+      ]
+    };
+    const mapMedia=window.matchMedia('(max-width:760px)');
+    function resizeMap(){
+      // One shared viewBox keeps the full territory visible at every width.
+      document.querySelectorAll('#country-map,.outline-stamp svg').forEach(svg=>{svg.setAttribute('viewBox',MAP_CONFIG.viewBox);svg.setAttribute('preserveAspectRatio','xMidYMid meet');});
+      document.querySelectorAll('.city .hit-area').forEach(el=>el.setAttribute('r',mapMedia.matches?90:46));
+      document.querySelectorAll('.city .marker-core').forEach(el=>el.setAttribute('r',mapMedia.matches?(el.dataset.capital==='true'?19:14):(el.dataset.capital==='true'?14:10.6)));
+    }
+    resizeMap();mapMedia.addEventListener('change',resizeMap);
+    const NS='http://www.w3.org/2000/svg';
+    const svgElement=(tag,attributes={})=>{const el=document.createElementNS(NS,tag);for(const [key,value]of Object.entries(attributes))el.setAttribute(key,value);return el;};
+    const reducedMotion=window.matchMedia('(prefers-reduced-motion:reduce)');
+    const transientAnimations=new Map();
+    function animateFeedback(el,keyframes,options){
+      const previous=transientAnimations.get(el);if(previous)previous.cancel();
+      if(reducedMotion.matches||!el.animate)return;
+      const animation=el.animate(keyframes,options);transientAnimations.set(el,animation);
+      animation.onfinish=()=>transientAnimations.delete(el);
+    }
+    const mapTargets=[];
+    function selectPlace(place,type){
+      mapTargets.forEach(({el,id})=>{const selected=id===place.id;el.classList.toggle('is-selected',selected);el.setAttribute('aria-pressed',String(selected));});
+      document.getElementById('selection-kind').textContent=type==='county'?'Odabrana županija':place.capital?'Odabran glavni grad':'Odabran grad';
+      document.getElementById('selection-name').textContent=place.name;
+      document.getElementById('selection-detail').textContent=type==='county'?place.description:place.capital?'Glavni grad Isolanije. Položaj je ilustrativan.':'Grad Isolanije. Položaj je ilustrativan.';
+      document.getElementById('country-map').classList.add('is-interacting');
+      animateFeedback(document.querySelector('.selection'),[{opacity:.55},{opacity:1}],{duration:180,easing:'ease-out'});
+      if(type==='city'){
+        const halo=document.querySelector('.city.is-selected .marker-halo');
+        animateFeedback(halo,[{transform:'scale(1)',opacity:1},{transform:'scale(1.32)',opacity:.55},{transform:'scale(1)',opacity:1}],{duration:420,easing:'cubic-bezier(.23,1,.32,1)'});
+      }
+    }
+    function bindTarget(el,place,type,isSvg=false){
+      el.setAttribute('aria-pressed','false');
+      el.addEventListener('click',()=>selectPlace(place,type));
+      if(isSvg){el.setAttribute('role','button');el.setAttribute('tabindex','0');el.setAttribute('aria-label',`${type==='county'?'Županija':place.capital?'Glavni grad':'Grad'}: ${place.name}`);el.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();selectPlace(place,type);}});}
+      mapTargets.push({el,id:place.id});
+    }
+    MAP_CONFIG.counties.forEach(place=>{
+      const li=document.createElement('li'),button=document.createElement('button');
+      button.type='button';button.textContent=place.name;bindTarget(button,place,'county');
+      li.append(button);document.getElementById('county-list').append(li);
+    });
+    MAP_CONFIG.cities.forEach(place=>{
+      const group=svgElement('g',{class:'city',transform:`translate(${place.x} ${place.y})`});
+      group.append(svgElement('circle',{r:46,class:'hit-area'}),svgElement('circle',{r:26,class:'marker-halo'}),svgElement('circle',{r:place.capital?14:10.6,class:'marker-core','data-capital':Boolean(place.capital)}));
+      if(place.capital)group.append(svgElement('circle',{r:4,fill:'#f0c653','pointer-events':'none'}));
+      const label=svgElement('text',{x:place.labelX??38,y:place.labelY??12,'text-anchor':place.anchor??'start'});label.textContent=place.name;group.append(label);
+      if(place.capital){const caption=svgElement('text',{x:38,y:60,class:'capital-label'});caption.textContent='Glavni grad';group.append(caption);}
+      bindTarget(group,place,'city',true);document.getElementById('city-layer').append(group);
+      const li=document.createElement('li'),button=document.createElement('button'),dot=document.createElement('span');button.type='button';dot.className=`list-dot${place.capital?' capital':''}`;dot.setAttribute('aria-hidden','true');button.append(dot,document.createTextNode(place.name));
+      if(place.capital){const caption=document.createElement('span');caption.className='city-caption';caption.textContent='Glavni grad';button.append(caption);}
+      bindTarget(button,place,'city');li.append(button);document.getElementById('city-list').append(li);
+    });
+    resizeMap();
+    const menuButton=document.querySelector('.menu-toggle'),navigation=document.querySelector('.main-nav');
+    function closeMenu(){menuButton.setAttribute('aria-expanded','false');navigation.classList.remove('is-open');}
+    menuButton.addEventListener('click',()=>{const opening=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(opening));navigation.classList.toggle('is-open',opening);});
+    navigation.addEventListener('click',event=>{if(event.target.closest('a'))closeMenu();});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menuButton.getAttribute('aria-expanded')==='true'){closeMenu();menuButton.focus();}});
+    document.addEventListener('click',event=>{if(!event.target.closest('header'))closeMenu();});
+    window.matchMedia('(min-width:761px)').addEventListener('change',event=>{if(event.matches)closeMenu();});
+    const dayNumber=document.getElementById('days-number'),dayRange=document.getElementById('days-range');
+    function updateDays(value){
+      const oldText=document.getElementById('stay-status').textContent;
+      const days=Math.max(0,Math.min(36500,Math.floor(Number(value)||0)));dayNumber.value=days;dayRange.max=Math.max(30,days);dayRange.value=days;document.getElementById('range-max').textContent=`${dayRange.max} dana`;
+      const remaining=5-days;
+      document.getElementById('stay-headline').textContent=days>=5?'Uvjet boravka je ispunjen':`Do ispunjenja uvjeta preostaje ${remaining} ${remaining===1?'dan':'dana'}.`;
+      document.getElementById('stay-detail').textContent=days>=5?'Ako si u državi najmanje pet dana i izjaviš da nisi stanovnik: kazna je 500 €.':'Uvjet boravka je najmanje pet dana u državi.';
+      if(oldText!==document.getElementById('stay-status').textContent)animateFeedback(document.getElementById('stay-status'),[{opacity:.45},{opacity:1}],{duration:180,easing:'ease-out'});
+    }
+    dayRange.addEventListener('input',()=>updateDays(dayRange.value));
+    dayNumber.addEventListener('input',()=>{if(dayNumber.value!=='')updateDays(dayNumber.value);});
+    dayNumber.addEventListener('change',()=>updateDays(dayNumber.value));
+
+    // Finite entrance effects are attached only when visible; JS failure leaves
+    // the default, fully visible HTML/SVG state intact. No scroll animation loop.
+    const mapSvg=document.getElementById('country-map');
+    function observeOnce(elements,callback,options){
+      if(!('IntersectionObserver' in window))return;
+      const observer=new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{if(entry.isIntersecting){callback(entry.target);observer.unobserve(entry.target);}});
+      },options);
+      elements.forEach(el=>observer.observe(el));
+    }
+    observeOnce(document.querySelectorAll('main>section[id]>.wrap'),el=>{
+      if(!reducedMotion.matches)el.classList.add('reveal-once');
+    },{threshold:.04,rootMargin:'0px 0px -35px 0px'});
+    observeOnce([mapSvg,document.getElementById('county-map')],el=>{
+      if(!reducedMotion.matches)el.classList.add('map-enter');
+    },{threshold:.18});
+    mapSvg.addEventListener('pointerdown',()=>mapSvg.classList.add('is-interacting'));
+
+    const trackedSections=[...document.querySelectorAll('main>section[id]')];
+    const navLinks=[...document.querySelectorAll('nav a[href^="#"]')];
+    let scrollFrame=0;
+    function updateScrollState(){
+      scrollFrame=0;
+      document.querySelector('header').classList.toggle('is-scrolled',scrollY>16);
+      const readingLine=innerHeight*.33;
+      let active='';
+      trackedSections.forEach(section=>{if(section.getBoundingClientRect().top<=readingLine)active=section.id;});
+      if(scrollY+innerHeight>=document.documentElement.scrollHeight-4)active=trackedSections.at(-1).id;
+      navLinks.forEach(link=>{if(link.hash===`#${active}`)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+    }
+    function queueScrollState(){if(!scrollFrame)scrollFrame=requestAnimationFrame(updateScrollState);}
+    window.addEventListener('scroll',queueScrollState,{passive:true});
+    window.addEventListener('resize',queueScrollState,{passive:true});updateScrollState();
+
+    const flag=document.querySelector('.hero-flag');
+    const finePointer=window.matchMedia('(hover:hover) and (pointer:fine)');
+    flag.addEventListener('pointermove',event=>{
+      if(reducedMotion.matches||!finePointer.matches||event.pointerType!=='mouse')return;
+      const bounds=flag.getBoundingClientRect();
+      const x=((event.clientX-bounds.left)/bounds.width-.5)*5;
+      const y=((event.clientY-bounds.top)/bounds.height-.5)*5;
+      flag.style.transform=`translate(${x}px,${y}px) rotate(-3deg)`;
+    });
+    function resetFlag(){flag.style.removeProperty('transform');}
+    flag.addEventListener('pointerleave',resetFlag);finePointer.addEventListener('change',resetFlag);
+    reducedMotion.addEventListener('change',()=>{
+      resetFlag();
+      if(reducedMotion.matches){
+        transientAnimations.forEach(animation=>animation.cancel());transientAnimations.clear();
+        document.querySelectorAll('.reveal-once,.map-enter').forEach(el=>el.classList.remove('reveal-once','map-enter'));
+      }
+    });
+  </script>
+</body>
+</html>
